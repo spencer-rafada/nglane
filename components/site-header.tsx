@@ -6,12 +6,15 @@ import { CartButton } from "@/components/cart-button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { categories } from "@/lib/categories"
 
+
+
 export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background">
       <div className="container flex h-16 items-center justify-between">
+        
         <Link href="/" className="font-bold text-xl">
-          ShopNow
+          NGLANE
         </Link>
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
           <Link href="/" className="transition-colors hover:text-primary">

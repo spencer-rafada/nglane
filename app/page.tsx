@@ -41,8 +41,8 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-            {categories.slice(0, 3).map((category) => (
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-6 mt-8  ">
+            {categories.slice(0, 5).map((category) => (
               <CategoryCard key={category.id} category={category} />
             ))}
           </div>

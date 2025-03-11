@@ -1,113 +1,21 @@
-import type { Product } from "./types"
+import type { Product } from "./types";
 
 export const products: Product[] = [
-  {
-    id: "1",
-    name: "Wireless Headphones",
-    description:
-      "Premium wireless headphones with noise cancellation technology for an immersive audio experience. Enjoy up to 30 hours of battery life and comfortable ear cushions for extended listening sessions.",
-    price: 149.99,
-    category: "Electronics",
-    image: "/placeholder.svg?height=400&width=400",
-  },
-  {
-    id: "2",
-    name: "Smart Watch",
-    description:
-      "Track your fitness goals, receive notifications, and more with this feature-packed smartwatch. Water-resistant design with a vibrant touchscreen display.",
-    price: 199.99,
-    category: "Electronics",
-    image: "/placeholder.svg?height=400&width=400",
-  },
-  {
-    id: "3",
-    name: "Leather Backpack",
-    description:
-      "Stylish and durable leather backpack with multiple compartments for all your essentials. Perfect for work, school, or travel.",
-    price: 89.99,
-    category: "Accessories",
-    image: "/placeholder.svg?height=400&width=400",
-  },
-  {
-    id: "4",
-    name: "Ceramic Coffee Mug",
-    description:
-      "Handcrafted ceramic coffee mug with a comfortable handle and elegant design. Microwave and dishwasher safe.",
-    price: 24.99,
-    category: "Home",
-    image: "/placeholder.svg?height=400&width=400",
-  },
-  {
-    id: "5",
-    name: "Fitness Tracker",
-    description:
-      "Monitor your heart rate, steps, sleep, and more with this sleek fitness tracker. Syncs wirelessly with your smartphone for detailed health insights.",
-    price: 79.99,
-    category: "Electronics",
-    image: "/placeholder.svg?height=400&width=400",
-  },
-  {
-    id: "6",
-    name: "Portable Bluetooth Speaker",
-    description:
-      "Compact Bluetooth speaker with powerful sound and 12-hour battery life. Water-resistant design makes it perfect for outdoor use.",
-    price: 59.99,
-    category: "Electronics",
-    image: "/placeholder.svg?height=400&width=400",
-  },
-  {
-    id: "7",
-    name: "Stainless Steel Water Bottle",
-    description:
-      "Keep your drinks cold for 24 hours or hot for 12 hours with this vacuum-insulated water bottle. Durable and leak-proof design.",
-    price: 34.99,
-    category: "Accessories",
-    image: "/placeholder.svg?height=400&width=400",
-  },
-  {
-    id: "8",
-    name: "Wireless Charging Pad",
-    description:
-      "Charge your compatible devices without the hassle of cables. Sleek, minimalist design with fast charging capabilities.",
-    price: 29.99,
-    category: "Electronics",
-    image: "/placeholder.svg?height=400&width=400",
-  },
-  {
-    id: "9",
-    name: "Running Shoes",
-    description:
-      "Lightweight and comfortable running shoes with excellent support and cushioning. Perfect for daily runs or marathon training.",
-    price: 119.99,
-    category: "Sports",
-    image: "/placeholder.svg?height=400&width=400",
-  },
-  {
-    id: "10",
-    name: "Yoga Mat",
-    description:
-      "Premium non-slip yoga mat with excellent cushioning and support. Eco-friendly materials and easy to clean surface.",
-    price: 49.99,
-    category: "Sports",
-    image: "/placeholder.svg?height=400&width=400",
-  },
-  {
-    id: "11",
-    name: "Cotton T-Shirt",
-    description: "Soft and comfortable 100% cotton t-shirt. Classic fit with reinforced stitching for durability.",
-    price: 24.99,
-    category: "Clothing",
-    image: "/placeholder.svg?height=400&width=400",
-  },
-  {
-    id: "12",
-    name: "Denim Jacket",
-    description: "Classic denim jacket with a modern fit. Versatile style that goes with almost any outfit.",
-    price: 79.99,
-    category: "Clothing",
-    image: "/placeholder.svg?height=400&width=400",
-  },
-]
+  { id: "1", name: "Linen Shirt", description: "Lightweight and breathable linen shirt.", price: 45.99, category: "shirt", image: "/placeholder.svg?height=400&width=400" },
+  { id: "2", name: "Corduroy Shirt", description: "Stylish and warm corduroy shirt.", price: 50.99, category: "shirt", image: "/placeholder.svg?height=400&width=400" },
+  { id: "3", name: "Ribbed Shirt", description: "Comfortable and flexible ribbed shirt.", price: 39.99, category: "shirt", image: "/placeholder.svg?height=400&width=400" },
+  { id: "4", name: "Crepe Shirt", description: "Elegant crepe fabric shirt for a smooth look.", price: 55.99, category: "shirt", image: "/placeholder.svg?height=400&width=400" },
+  { id: "5", name: "Linen Set", description: "A complete linen outfit for a relaxed vibe.", price: 79.99, category: "sets", image: "/placeholder.svg?height=400&width=400" },
+  { id: "6", name: "Crepe Set", description: "A stylish crepe fabric set for formal occasions.", price: 89.99, category: "sets", image: "/placeholder.svg?height=400&width=400" },
+  { id: "7", name: "Vintage Set", description: "Classic vintage outfit with a modern touch.", price: 99.99, category: "sets", image: "/placeholder.svg?height=400&width=400" },
+  { id: "8", name: "Linen Pants", description: "Breathable and stylish linen pants.", price: 49.99, category: "pant", image: "/placeholder.svg?height=400&width=400" },
+  { id: "9", name: "Crepe Pants", description: "Smooth and elegant crepe pants.", price: 59.99, category: "pant", image: "/placeholder.svg?height=400&width=400" },
+  { id: "10", name: "Cargo Pants", description: "Durable cargo pants with multiple pockets.", price: 69.99, category: "pant", image: "/placeholder.svg?height=400&width=400" },
+  { id: "11", name: "Duchess Dress", description: "Elegant and luxurious duchess dress.", price: 120.99, category: "dress", image: "/placeholder.svg?height=400&width=400" },
+  { id: "12", name: "Crepe Dress", description: "A smooth and stylish crepe fabric dress.", price: 110.99, category: "dress", image: "/placeholder.svg?height=400&width=400" },
+  { id: "13", name: "Ankara Dress", description: "Beautifully designed Ankara dress.", price: 99.99, category: "dress", image: "/placeholder.svg?height=400&width=400" },
+  { id: "14", name: "Danshiki", description: "Traditional African Danshiki with vibrant prints.", price: 65.99, category: "kaftan", image: "/placeholder.svg?height=400&width=400" },
+  { id: "15", name: "Senator", description: "Elegant senator wear for a classy look.", price: 89.99, category: "kaftan", image: "/placeholder.svg?height=400&width=400" },
+];
 
-export const featuredProducts = products.slice(0, 4)
-
+export const featuredProducts = products.slice(0, 4);
