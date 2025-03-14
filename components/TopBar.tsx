@@ -1,8 +1,8 @@
 // TopBar.tsx
 "use client";
 
+import { fetchUserCurrencyAndFlag } from '@/lib/currency.util';
 import React, { useState, useEffect } from 'react';
-import { fetchUserCurrencyAndFlag } from '../pages/api/currencyApi'; // Adjust the import path if necessary
 
 const TopBar = () => {
   const [currency, setCurrency] = useState(''); // Holds the currency code
