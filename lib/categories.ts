@@ -1,35 +1,35 @@
-import type { Category } from "./types"
+import type { Category } from "./types";
+
 
 export const categories: Category[] = [
   {
-    id: "electronics",
-    name: "Electronics",
-    description: "Gadgets and electronic devices for everyday use",
-    image: "/placeholder.svg?height=400&width=400",
+    id: "shirt",
+    name: "Shirt",
+    description: "Stylish and comfortable shirts for all occasions",
+    image: "/assets/1st_shirt.jpg",
   },
   {
-    id: "accessories",
-    name: "Accessories",
-    description: "Stylish accessories to complement your lifestyle",
-    image: "/placeholder.svg?height=400&width=400",
+    id: "sets",
+    name: "Sets",
+    description: "Coordinated outfits for a complete look",
+    image: "/assets/vintage2piece.jpg",
   },
   {
-    id: "home",
-    name: "Home",
-    description: "Products to enhance your living space",
-    image: "/placeholder.svg?height=400&width=400",
+    id: "pant",
+    name: "Pant",
+    description: "Trendy and comfortable pants for every style",
+    image: "/assets/pants.jpg",
   },
   {
-    id: "clothing",
-    name: "Clothing",
-    description: "Fashionable apparel for all occasions",
-    image: "/placeholder.svg?height=400&width=400",
+    id: "dress",
+    name: "Dress",
+    description: "Elegant and fashionable dresses for all occasions",
+    image: "/assets/dress.jpg",
   },
   {
-    id: "sports",
-    name: "Sports & Fitness",
-    description: "Equipment and gear for an active lifestyle",
-    image: "/placeholder.svg?height=400&width=400",
+    id: "kaftan",
+    name: "Kaftan",
+    description: "Traditional and modern kaftan designs",
+    image: "/assets/kaftan2.jpg",
   },
-]
-
+];
