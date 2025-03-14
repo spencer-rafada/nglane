@@ -1,15 +1,16 @@
-import Link from "next/link"
-import Image from "next/image"
-import type { Product } from "@/lib/types"
-import { AddToCartButton } from "./add-to-cart-button"
+import Link from "next/link";
+import Image from "next/image";
+import type { Product } from "@/lib/types";
+import { AddToCartButton } from "./add-to-cart-button";
 
 interface ProductCardProps {
-  product: Product
+  product: Product;
 }
 
 export function ProductCard({ product }: ProductCardProps) {
   return (
     <div className="group relative overflow-hidden rounded-lg border">
+      {/* Ensure Link directly wraps content without <a> */}
       <Link href={`/products/${product.id}`} className="block">
         <div className="relative aspect-square overflow-hidden bg-muted">
           <Image
@@ -22,18 +23,17 @@ export function ProductCard({ product }: ProductCardProps) {
         </div>
         <div className="p-4">
           <h3 className="font-medium">{product.name}</h3>
-          <Link href={`/categories/${product.category.toLowerCase()}`}>
-            <p className="mt-1 text-sm text-muted-foreground hover:text-primary transition-colors">
-              {product.category}
-            </p>
-          </Link>
-          <p className="mt-2 font-semibold">${product.price.toFixed(2)}</p>
         </div>
       </Link>
+
+      {/* Separate Link for category */}
       <div className="p-4 pt-0">
+        <Link href={`/categories/${product.category.toLowerCase()}`} className="mt-1 text-sm text-muted-foreground hover:text-primary transition-colors">
+          {product.category}
+        </Link>
+        <p className="mt-2 font-semibold">${product.price.toFixed(2)}</p>
         <AddToCartButton product={product} variant="outline" />
       </div>
     </div>
-  )
+  );
 }
-
