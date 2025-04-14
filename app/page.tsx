@@ -1,4 +1,9 @@
 import Link from "next/link"
+import HeroSection from '../components/HeroSection';
+
+import leftImageMen from '../public/assets/duchess_dress.jpeg'; // Left image
+import rightImageMen from '../public/assets/crepe_dress.jpeg'; // Right image (use a different image if needed)
+
 
 import { Button } from "@/components/ui/button"
 import { ProductCard } from "@/components/product-card"
@@ -10,7 +15,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-slate-200">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
@@ -29,7 +34,14 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      <HeroSection
+        leftImage={leftImageMen}
+        rightImage={rightImageMen}
+        heading="SHOP NOW"
+        
+        button1Text="Shop Shirts"
+        button2Text="Shop Pants"
+      />
       {/* Categories Section */}
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">

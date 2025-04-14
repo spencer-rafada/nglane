@@ -8,22 +8,20 @@ interface CategoryCardProps {
 
 export function CategoryCard({ category }: CategoryCardProps) {
   return (
-    <div className="group relative overflow-hidden rounded-lg border">
-      <Link
-        href={`/categories/${category.id}`}
-        className="block"
-      >
-        <div className="relative aspect-square overflow-hidden bg-muted ">
-          <Image
-            src={category.image || "/placeholder.svg"}
-            alt={category.name}
-            fill
-            className="object-cover transition-transform group-hover:scale-105"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-          />
-        </div>
-        
-      </Link>
+    <div className="w-full max-w-xs items-center"> {/* Ensures proper width */}
+      <div className="group relative overflow-hidden rounded-lg border">
+        <Link href={`/categories/${category.id}`} className="block">
+          <div className="relative w-full aspect-square overflow-hidden bg-muted">
+            <Image
+              src={category.image || "/placeholder.svg"}
+              alt={category.name}
+              fill
+              className="object-fill transition-transform group-hover:scale-105"
+            />
+          </div>
+        </Link>
+      </div>
+      <span className="mt-1 text-center text-lg font-medium">{category.name}</span>
     </div>
   );
 }
