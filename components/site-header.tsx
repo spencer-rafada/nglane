@@ -1,3 +1,10 @@
+'use client';
+
+import { signIn, signOut, useSession } from 'next-auth/react';
+
+
+
+
 import Link from "next/link";
 import { User, ChevronDown, Menu } from "lucide-react";
 
@@ -7,11 +14,16 @@ import {
   DropdownMenu, 
   DropdownMenuContent, 
   DropdownMenuItem, 
-  DropdownMenuTrigger 
+  DropdownMenuTrigger, 
+  DropdownMenuLabel,
+  DropdownMenuSeparator
+
 } from "@/components/ui/dropdown-menu";
 import { categories } from "@/lib/categories";
+import * as DropdownMenuPrimitive from '@radix-ui/react-dropdown-menu';
 
 export function SiteHeader() {
+  const { data: session } = useSession();
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background">
       <div className="container flex h-16 items-center justify-between">
@@ -47,10 +59,43 @@ export function SiteHeader() {
         
         {/* Right Section */}
         <div className="flex items-center space-x-4">
-          <Button variant="ghost" size="icon" className="hidden md:flex">
+        <DropdownMenu>
+        <DropdownMenuTrigger asChild>
+          <Button variant="ghost" size="icon" className="md:flex">
             <User className="h-5 w-5" />
             <span className="sr-only">Account</span>
           </Button>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent align="end" className="w-48">
+          {session ? (
+            <>
+              <DropdownMenuLabel>Welcome, {session.user?.name}</DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem asChild>
+              <Link href="/account">My Account</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => signOut()}>
+                Sign Out
+              </DropdownMenuItem>
+            </>
+          ) : (
+            <>
+              <DropdownMenuLabel>Welcome</DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem onClick={() => signIn('google')}>
+                Sign In with Google
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/signup">Create Account</Link>
+              </DropdownMenuItem>
+            </>
+          )}
+          <DropdownMenuSeparator />
+          <DropdownMenuItem asChild>
+            <Link href="/help">Help Center</Link>
+          </DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
           <CartButton />
           
           {/* Mobile Menu */}

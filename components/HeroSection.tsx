@@ -29,7 +29,7 @@ class HeroSection extends Component<HeroSectionProps> {
               src={leftImage}
               alt="Left Image"
               fill
-              style={{ objectFit: 'contain' }}
+              style={{ objectFit: 'cover' }}
               priority={true}
               className="absolute inset-0"
             />
@@ -41,7 +41,7 @@ class HeroSection extends Component<HeroSectionProps> {
               src={rightImage}
               alt="Right Image"
               fill
-              style={{ objectFit: 'contain' }}
+              style={{ objectFit: 'cover' }}
               priority={false}
               className="absolute inset-0"
             />

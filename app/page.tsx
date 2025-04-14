@@ -1,8 +1,8 @@
 import Link from "next/link"
 import HeroSection from '../components/HeroSection';
 
-import leftImageMen from '../public/assets/duchess_dress.jpeg'; // Left image
-import rightImageMen from '../public/assets/crepe_dress.jpeg'; // Right image (use a different image if needed)
+import leftImageMen from '../public/assets/linenhero2.jpeg'; // Left image
+import rightImageMen from '../public/assets/duchess_dress.png'; // Right image (use a different image if needed)
 
 
 import { Button } from "@/components/ui/button"
