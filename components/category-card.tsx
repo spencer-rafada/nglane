@@ -13,7 +13,7 @@ export function CategoryCard({ category }: CategoryCardProps) {
         href={`/categories/${category.id}`}
         className="block"
       >
-        <div className="relative aspect-square overflow-hidden bg-muted h-60">
+        <div className="relative aspect-square overflow-hidden bg-muted ">
           <Image
             src={category.image || "/placeholder.svg"}
             alt={category.name}
