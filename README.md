@@ -5,7 +5,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 ### Team Members
 
 - Osondu Benjamin Ihentuge
-- Neil Spencer Rafada
+- Spencer Rafada
 
 ## Getting Started
 
