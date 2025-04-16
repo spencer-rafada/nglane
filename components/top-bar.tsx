@@ -30,11 +30,11 @@ const TopBar = () => {
   return (
     <div className="bg-black text-white p-2 text-sm flex justify-end items-center  top-0 left-0 right-0 z-30">
       {loading ? (
-        <span>Loading...</span>
+        <span data-testid='top-bar-loading'>Loading...</span>
       ) : (
         <div className="flex items-center space-x-2">
-          {flagUrl && <img src={flagUrl} alt="Flag" className="w-6 h-4" />}
-          <span>{currency}</span>
+          {flagUrl && <img src={flagUrl} alt="Flag" className="w-6 h-4" data-testid='top-bar-flag'/>}
+          <span data-testid='top-bar-currency'>{currency}</span>
         </div>
       )}
     </div>

@@ -6,7 +6,7 @@ import "./globals.css"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { CartProvider } from "@/lib/cart-context"
-import TopBar from '../components/TopBar';
+import TopBar from '../components/top-bar';
 
 const inter = Inter({ subsets: ["latin"] })
 
