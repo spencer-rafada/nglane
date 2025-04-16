@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  has-lint-errors:
+  has-build-errors:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository code
@@ -20,7 +20,7 @@ jobs:
       - run: npm ci
       - run: npm run lint
   validate-unit-tests:
-    needs: [has-lint-errors]
+    needs: [has-build-errors]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository code
