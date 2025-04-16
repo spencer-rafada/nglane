@@ -1,4 +1,4 @@
-import type { Product } from "./types";
+import type { Product } from "../lib/types";
 
 export const products: Product[] = [
   { id: "1", name: "Linen Shirt", description: "Lightweight and breathable linen shirt.", price: 45.99, category: "shirt", image: "/assets/linen_shirt.jpg" },

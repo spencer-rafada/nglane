@@ -3,7 +3,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ProductCard } from "@/components/product-card"
 import { CategoryCard } from "@/components/category-card"
-import { featuredProducts } from "@/lib/products"
+import { featuredProducts } from "@/utils/products"
 import { categories } from "@/lib/categories"
 
 export default function Home() {

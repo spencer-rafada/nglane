@@ -2,7 +2,7 @@ import Image from "next/image"
 import { notFound } from "next/navigation"
 
 import { AddToCartButton } from "@/components/add-to-cart-button"
-import { products } from "@/lib/products"
+import { products } from "@/utils/products"
 
 export default function ProductPage({ params }: { params: { id: string } }) {
   const product = products.find((p) => p.id === params.id)

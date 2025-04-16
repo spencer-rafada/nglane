@@ -1,7 +1,7 @@
 // TopBar.tsx
 "use client";
 
-import { fetchUserCurrencyAndFlag } from '@/lib/currency.util';
+import { fetchUserCurrencyAndFlag } from '@/utils/currency.util'
 import React, { useState, useEffect } from 'react';
 
 const TopBar = () => {

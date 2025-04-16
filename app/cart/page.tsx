@@ -7,7 +7,7 @@ import { Trash2 } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { useCart } from "@/lib/cart-context"
-import { formatPrice } from "@/lib/utils"
+import { formatPrice } from "@/utils/utils"
 
 export default function CartPage() {
   const { cart, removeFromCart, updateQuantity } = useCart()
